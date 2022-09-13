@@ -1,2 +1,2 @@
 console.log('Привет, мир!')
-console.log('ВсЁ будет')
+console.log('Rename branch master or project')
