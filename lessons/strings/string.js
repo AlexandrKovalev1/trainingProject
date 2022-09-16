@@ -1,9 +1,11 @@
-//
-let singleQuote = '';
-let doubleQuote = "";
-let tickQuote = ``;
+//Способы записи строк
+let singleQuote = 'Строка в одиночных кавычках';
+let doubleQuote = "Строка в двойных кавычках";
+let tickQuote = `Строка в обратных кавычках`;
 
 
-//
-let multiline1 = '';
-let multiline2 = '';
+//Многострочные тексты
+let multiline1 = 'Строка\nс\nпереносами';
+let multiline2 = `строка
+с
+переносами `;

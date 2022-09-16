@@ -28,8 +28,8 @@ let m = 10;
 
 let range = Math.abs(n- m);
 let min = Math.min(m, n);
-let randomNumber = Math.round((Math.random() * (range -3)) + min);
-console.log (randomNumber, 'случайное нечётное число в диапазоне от', n, 'до', m, (randomNumber + (randomNumber % 2) + 3 ));
+let randomNumber = Math.round((Math.random() * (range -1)) + min);
+console.log (randomNumber, 'случайное нечётное число в диапазоне от', n, 'до', m, (randomNumber + (randomNumber % 2) + 1));
 
 
 
