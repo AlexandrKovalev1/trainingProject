@@ -51,17 +51,45 @@ for (let position in roadMines) {
 
 let daysOfMonth = [];
 let daysOfWeek = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
-let dayOfWeek = 'Понедельник';
+
 for (let i = 0; i < 31; ++i) {
     daysOfMonth[i] = [i + 1];
 }
-
-for (let day of daysOfMonth) {
-     
+let dayOfWeek = 'Пятница';
+let start = 0;
+switch (dayOfWeek) {
+    case 'Вторник':
+        start = 1;
+        break;
+    case 'Среда':
+        start = 2;
+        break;
+    case 'Четверг':
+        start = 3;
+        break;
+    case 'Пятница':
+        start = 4;
+        break;
+    case 'Суббота':
+        start = 5;
+        break;
+    case 'Воскресенье':
+        start = 6;
+        break;
+}
+console.log(daysOfMonth.length);
+let i = 0;
+while(i < daysOfMonth.length - 1) {
+    for (let j = 0; j < daysOfWeek.length; ++j) {
+        let index = (j + start) % daysOfWeek.length;
+        console.log(`${daysOfMonth[i]} января ${daysOfWeek[index]}`);
+        if (i < daysOfMonth.length -1) {
+            i++;
+        } else {
+            break;
+        }
+    }
 }
 
 
-/*for (let i = 0; i < arr.length; i++) {
-    let index = (i + start) % arr.length;
-    console.log(arr[index]);
-  }*/
+ 
