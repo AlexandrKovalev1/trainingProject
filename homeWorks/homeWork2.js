@@ -1,7 +1,7 @@
 let x1 = 8;
 let y1 = 1;
 let x2 = 5;
-let y2 = 1;
+let y2 = 4;
 
 let x = Math.abs(x1 - x2); // abs для получения положительного значения
 let y = Math.abs(y1 - y2);
