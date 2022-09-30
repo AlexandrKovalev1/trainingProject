@@ -90,6 +90,4 @@ while(i < daysOfMonth.length - 1) {
         }
     }
 }
-
-
  

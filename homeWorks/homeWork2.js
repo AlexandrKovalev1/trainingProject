@@ -26,10 +26,10 @@ console.log('a != b', fractNumberA != fractNumberB);
 let n = -3;
 let m = 10;
 
-let range = Math.abs(n- m);
+let range = Math.abs(n- m); 
 let min = Math.min(m, n);
 let randomNumber = Math.round((Math.random() * (range -1)) + min);
-console.log (randomNumber, 'случайное нечётное число в диапазоне от', n, 'до', m, (randomNumber + (randomNumber % 2) + 1));
+console.log (randomNumber, 'случайное нечётное число в диапазоне от', n, 'до', m, (randomNumber + (randomNumber % 2) + 1)); //не правильно
 
 
 
